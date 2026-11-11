@@ -1,0 +1,595 @@
+{
+ "rows": [
+  {
+   "kind": "onetrust",
+   "site": "ikea.com/gb",
+   "url": "https://www.ikea.com/gb/en/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Reject all",
+     "outcome": "rejected",
+     "ruleId": "onetrust"
+    },
+    "popups": 0,
+    "url": "https://www.ikea.com/gb/en/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "onetrust",
+   "site": "vodafone.ro",
+   "url": "https://www.vodafone.ro/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Reject all",
+     "outcome": "rejected",
+     "ruleId": "onetrust"
+    },
+    "popups": 0,
+    "url": "https://www.vodafone.ro/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "onetrust",
+   "site": "tv2.dk",
+   "url": "https://www.tv2.dk/",
+   "status": {
+    "carry": true,
+    "cookie": {
+     "detail": "Reject all",
+     "outcome": "rejected",
+     "ruleId": "onetrust"
+    },
+    "popups": 0,
+    "url": "https://tv2.dk/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "cookiebot",
+   "site": "cookiebot.com",
+   "url": "https://www.cookiebot.com/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Deny",
+     "outcome": "rejected",
+     "ruleId": "cookiebot"
+    },
+    "popups": 0,
+    "url": "https://www.cookiebot.com/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "cookiebot",
+   "site": "berlingske.dk",
+   "url": "https://www.berlingske.dk/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Deny",
+     "outcome": "rejected",
+     "ruleId": "cookiebot"
+    },
+    "popups": 0,
+    "url": "https://www.berlingske.dk/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "cookiebot",
+   "site": "dr.dk",
+   "url": "https://www.dr.dk/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Unticked 0 categories, saved selection",
+     "outcome": "saved-necessary",
+     "ruleId": "cookiebot"
+    },
+    "popups": 0,
+    "url": "https://www.dr.dk/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "didomi",
+   "site": "didomi.io",
+   "url": "https://www.didomi.io/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Disagree",
+     "outcome": "rejected",
+     "ruleId": "didomi"
+    },
+    "popups": 0,
+    "url": "https://www.didomi.io/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "didomi",
+   "site": "20minutes.fr",
+   "url": "https://www.20minutes.fr/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "",
+     "outcome": "pay-or-consent",
+     "ruleId": "generic"
+    },
+    "popups": 0,
+    "url": "https://www.20minutes.fr/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": true,
+   "ext_errors": []
+  },
+  {
+   "kind": "didomi",
+   "site": "elmundo.es",
+   "url": "https://www.elmundo.es/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "",
+     "outcome": "pay-or-consent",
+     "ruleId": "generic"
+    },
+    "popups": 0,
+    "url": "https://www.elmundo.es/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": true,
+   "ext_errors": []
+  },
+  {
+   "kind": "quantcast",
+   "site": "quantcast.com",
+   "url": "https://www.quantcast.com/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "REJECT ALL (second layer)",
+     "outcome": "rejected",
+     "ruleId": "quantcast"
+    },
+    "popups": 0,
+    "url": "https://www.quantcast.com/home"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "quantcast",
+   "site": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "DISAGREE",
+     "outcome": "rejected",
+     "ruleId": "quantcast"
+    },
+    "popups": 0,
+    "url": "https://www.bleepingcomputer.com/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "quantcast",
+   "site": "express.co.uk",
+   "url": "https://www.express.co.uk/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "",
+     "outcome": "pay-or-consent",
+     "ruleId": "generic"
+    },
+    "popups": 0,
+    "url": "https://www.express.co.uk/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": true,
+   "ext_errors": []
+  },
+  {
+   "kind": "quantcast",
+   "site": "mirror.co.uk",
+   "url": "https://www.mirror.co.uk/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "",
+     "outcome": "pay-or-consent",
+     "ruleId": "generic"
+    },
+    "popups": 0,
+    "url": "https://www.mirror.co.uk/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": true,
+   "ext_errors": []
+  },
+  {
+   "kind": "trustarc",
+   "site": "trustarc.com",
+   "url": "https://trustarc.com/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Reject Optional",
+     "outcome": "rejected",
+     "ruleId": "trustarc"
+    },
+    "popups": 0,
+    "url": "https://trustarc.com/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "trustarc",
+   "site": "ibm.com",
+   "url": "https://www.ibm.com/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Required only",
+     "outcome": "rejected",
+     "ruleId": "trustarc"
+    },
+    "popups": 0,
+    "url": "https://www.ibm.com/us-en"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "trustarc",
+   "site": "garmin.com",
+   "url": "https://www.garmin.com/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "REFUZARE",
+     "outcome": "rejected",
+     "ruleId": "trustarc"
+    },
+    "popups": 0,
+    "url": "https://www.garmin.com/ro-RO/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "usercentrics",
+   "site": "dm.de",
+   "url": "https://www.dm.de/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Einwilligung ablehnen",
+     "outcome": "rejected",
+     "ruleId": "usercentrics"
+    },
+    "popups": 0,
+    "url": "https://www.dm.de/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "usercentrics",
+   "site": "zalando.de",
+   "url": "https://www.zalando.de/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Nur Notwendige",
+     "outcome": "rejected",
+     "ruleId": "usercentrics"
+    },
+    "popups": 0,
+    "url": "https://www.zalando.de/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "usercentrics",
+   "site": "o2online.de",
+   "url": "https://www.o2online.de/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Verweigern",
+     "outcome": "rejected",
+     "ruleId": "usercentrics"
+    },
+    "popups": 0,
+    "url": "https://www.o2online.de/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "usercentrics",
+   "site": "fressnapf.de",
+   "url": "https://www.fressnapf.de/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Nur notwendige Cookies",
+     "outcome": "rejected",
+     "ruleId": "usercentrics"
+    },
+    "popups": 0,
+    "url": "https://www.fressnapf.de/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "sourcepoint",
+   "site": "bbc.com",
+   "url": "https://www.bbc.com/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "I do not agree",
+     "outcome": "rejected",
+     "ruleId": "sourcepoint"
+    },
+    "popups": 0,
+    "url": "https://www.bbc.com/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "sourcepoint",
+   "site": "sky.com",
+   "url": "https://www.sky.com/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Essential cookies only",
+     "outcome": "rejected",
+     "ruleId": "sourcepoint"
+    },
+    "popups": 0,
+    "url": "https://www.sky.com/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "sourcepoint",
+   "site": "independent.co.uk",
+   "url": "https://www.independent.co.uk/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "ESSENTIAL COOKIES ONLY",
+     "outcome": "rejected",
+     "ruleId": "sourcepoint"
+    },
+    "popups": 0,
+    "url": "https://www.independent.co.uk/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "sourcepoint",
+   "site": "theguardian.com",
+   "url": "https://www.theguardian.com/europe",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "",
+     "outcome": "pay-or-consent",
+     "ruleId": "sourcepoint"
+    },
+    "popups": 0,
+    "url": "https://www.theguardian.com/europe"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": true,
+   "ext_errors": []
+  },
+  {
+   "kind": "sourcepoint",
+   "site": "spiegel.de",
+   "url": "https://www.spiegel.de/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "",
+     "outcome": "pay-or-consent",
+     "ruleId": "sourcepoint"
+    },
+    "popups": 0,
+    "url": "https://www.spiegel.de/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": true,
+   "ext_errors": []
+  },
+  {
+   "kind": "generic",
+   "site": "cel.ro",
+   "url": "https://www.cel.ro/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Refuza toate",
+     "outcome": "rejected",
+     "ruleId": "generic"
+    },
+    "popups": 0,
+    "url": "https://www.cel.ro/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "generic",
+   "site": "libris.ro",
+   "url": "https://www.libris.ro/",
+   "status": {
+    "carry": true,
+    "cookie": {
+     "detail": "Refuz toate",
+     "outcome": "rejected",
+     "ruleId": "generic"
+    },
+    "popups": 0,
+    "url": "https://www.libris.ro/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": false,
+   "ext_errors": []
+  },
+  {
+   "kind": "generic",
+   "site": "emag.ro",
+   "url": "https://www.emag.ro/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Refuz\u0103 toate",
+     "outcome": "rejected",
+     "ruleId": "generic"
+    },
+    "popups": 0,
+    "url": "https://www.emag.ro/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": true,
+   "ext_errors": []
+  },
+  {
+   "kind": "generic",
+   "site": "fashiondays.ro",
+   "url": "https://www.fashiondays.ro/",
+   "status": {
+    "carry": false,
+    "cookie": {
+     "detail": "Doar cele esen\u021biale",
+     "outcome": "rejected",
+     "ruleId": "generic"
+    },
+    "popups": 0,
+    "url": "https://www.fashiondays.ro/"
+   },
+   "overlay_after": 0,
+   "overlay_before": null,
+   "ov_desc": [],
+   "banner_visible_after": true,
+   "ext_errors": []
+  }
+ ],
+ "stats": {
+  "stats": {
+   "cookiesHidden": 0,
+   "cookiesRejected": 23,
+   "popupsClosed": 0,
+   "today": {
+    "count": 23,
+    "date": "2026-11-11"
+   }
+  }
+ }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Quiet Web</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <main>
+    <header class="top">
+      <img class="mark" src="icons/icon128.png" width="56" height="56" alt="">
+      <div>
+        <h1>Welcome to Quiet Web</h1>
+        <p class="promise">Says no to cookie banners and closes newsletter popups, so you don't have to.</p>
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="try">
+      <h2 id="try">Try it now</h2>
+      <ol class="steps">
+        <li><span class="n" aria-hidden="true">1</span><span>Visit a news site: the cookie banner is answered "no" for you.</span></li>
+        <li><span class="n" aria-hidden="true">2</span><span>Click the Quiet Web icon to see what was handled on that page.</span></li>
+        <li><span class="n" aria-hidden="true">3</span><span>If a site looks broken, switch Quiet Web off for that site from the popup.</span></li>
+      </ol>
+      <div class="actions">
+        <button id="open-settings" type="button" class="primary">Open settings</button>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="good">
+      <h2 id="good">Good to know</h2>
+      <ul class="notes">
+        <li>Quiet Web only ever clicks reject or "necessary only" buttons, never accept.</li>
+        <li>Everything happens on your device. No account, no analytics, no servers, no network requests.</li>
+      </ul>
+    </section>
+
+    <p class="pin">Pin it: click the puzzle icon in the toolbar, then the pin.</p>
+  </main>
+  <script src="welcome.js"></script>
+</body>
+</html>

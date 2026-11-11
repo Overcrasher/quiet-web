@@ -1,0 +1,19 @@
+# RULES-B progress
+- started; nothing captured yet
+- probe1: sourcepoint live on bbc.com, sky.com, spiegel.de, theguardian.com, independent.co.uk, t-online.de (iframe sp_message_iframe_*). trustarc live on trustarc.com (#truste-consent-track). usercentrics: siemens.com has #usercentrics-root + UC_UI but not visible (investigate).
+- trustarc captured (trustarc.com, ibm.com, garmin.com) via captures/rb_capture.py (re-run: python3 captures/rb_capture.py <plat> <name> <url> [lang] [wait])
+- trustarc captures done (all use #truste-consent-track, buttons #truste-consent-required=reject, #truste-consent-button=accept, #truste-show-consent=manage). next: usercentrics (dm.de zalando.de o2online.de usercentrics.com fressnapf.de siemens.com)
+- usercentrics captured: dm.de zalando.de o2online.de (open shadow #usercentrics-root, data-testid uc-deny-all-button) + usercentrics.com fressnapf.de (#usercentrics-cmp-ui variant). coordinator: write captures/<plat>/fixture.py FIXTURES=[{name,url,html,expect_rule,expect_outcome}]; bbc/spiegel/guardian for sourcepoint. next: write rules trustarc/usercentrics then sourcepoint captures
+- rules trustarc.js usercentrics.js written (not yet live-verified). next: sourcepoint captures (bbc, spiegel, guardian), rule, generic, live verify, fixture.py x4, RESULT.md x4
+- sourcepoint captured (guardian, spiegel, bbc json/html/png). FINDINGS: Sourcepoint choice types: 11 accept, 12 options, 13 reject (bbc 'I do not agree'), 9 = SUBSCRIBE (guardian 'Reject all and subscribe', spiegel 'Jetzt abonnieren') -> NEVER click; spiegel PM = 2nd iframe /privacy-manager/ with Zustimmen/Ablehnen per purpose + .sp_choice_type_SAVE_AND_EXIT. Design: top-doc rule waits for container gone else hide; frame rule clicks. tools: captures/rb_frame.py
+- sourcepoint.js written. next: live verify script captures/rb_live.py, generic.js, fixture.py, RESULT.md
+- generic.js written; live script captures/rb_live.py (waits for SW). trustarc.com live OK (rejected, notice_gdpr_prefs=0:). NOTE for coordinator: harness must wait for SW target before navigating else engine stops 'no-state'. next: live ibm/garmin, usercentrics x3, sourcepoint x3, generic sites, fixtures, RESULT.md
+- trustarc live OK x3 (trustarc.com ibm.com garmin.com). next usercentrics live
+- pay-or-consent guard added to all 4 rules + tests/run_rules_b.js (176 pass). usercentrics live OK x4. next: sourcepoint live (bbc/guardian/spiegel), generic live, fixtures, RESULT.md
+- sourcepoint: removed top-doc role (false 'rejected', no hide); guardian+spiegel = pay-or-consent (PM save disabled) -> none; bbc OK. re-running live
+- sourcepoint live: bbc OK, independent OK (euconsent purposes empty); fix: no sleep after click (frame torn down before report). guardian/spiegel = none pay-or-consent. next sky recheck, generic live, fixtures, RESULT.md
+- generic.js: lib/reject-phrases.js lacks ro 'Refuza toate'/'Doar cele esentiale' -> local EXTRA list in generic (tell coordinator). generic sites: cel.ro libris.ro emag.ro fashiondays.ro. next: capture+live generic, fixtures, RESULT.md
+- generic live: cel.ro emag.ro fashiondays.ro libris.ro OK (libris reloads page -> tab record cleared by nav but stats counted). next: pay-or-consent live on express/mirror, fixtures, RESULT.md x4, final checks
+- fixture.py written x4 (not yet run live). next: run fixtures live via local script, RESULT.md x4, final checks, report
+- fixtures pass live (rb_fixtures.py); sourcepoint type13 direct click (I do not agree guard). next: final live recheck, RESULT.md x4, report
+- RESULT.md x4 written; final report next

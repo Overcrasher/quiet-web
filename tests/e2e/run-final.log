@@ -1,0 +1,146 @@
+PASS welcome :: welcome.html opened on install
+PASS welcome :: welcome has the 3 steps + privacy + settings
+PASS newsletter :: modal with close button is closed
+PASS newsletter :: body scroll restored after close
+PASS newsletter :: per-tab session record counts 1 popup
+PASS newsletter :: persistent counter popupsClosed == 1
+PASS newsletter :: persistent storage holds no per-tab/page data
+PASS newsletter :: no console errors
+PASS newsletter :: modal without close button is removed
+PASS newsletter :: fixed-body scroll lock undone and scroll position restored
+PASS newsletter :: popup that fades in late (opacity 0 at first look) is closed
+PASS newsletter :: modal with 'No thanks' link closed
+PASS newsletter :: left alone: small non-overlay email box
+PASS newsletter :: left alone: overlay with password field
+PASS newsletter :: left alone: login URL
+PASS newsletter :: left alone: cart URL
+PASS newsletter :: left alone: checkout URL
+PASS newsletter :: left alone: URL with account in query
+PASS newsletter :: left alone: overlay present at load (not appeared after)
+PASS newsletter :: left alone: overlay without email input
+PASS newsletter :: left alone: overlay with payment field
+PASS newsletter :: no counter movement for untouched pages
+PASS exclusions :: excluded: /signin
+PASS exclusions :: excluded: /sign-in
+PASS exclusions :: excluded: /signup
+PASS exclusions :: excluded: /register
+PASS exclusions :: excluded: /basket
+PASS exclusions :: excluded: /payment
+PASS exclusions :: excluded: /auth
+PASS exclusions :: excluded: /password
+PASS exclusions :: excluded: /Login
+PASS exclusions :: excluded: /x?q=PASSWORD
+PASS disable :: set-site-disabled accepted from popup
+PASS disable :: disabled list stored
+PASS disable :: popup stays on disabled site
+PASS disable :: nothing counted on disabled site
+PASS disable :: popup says Disabled on this site
+PASS disable :: toggle checked in popup
+PASS disable :: re-enabled: popup closed again
+PASS disable :: invalid host rejected
+PASS popup :: headline '1 annoyance handled for you.'
+PASS popup :: today count
+PASS popup :: breakdown popups = 1
+PASS popup :: host shown
+PASS popup :: page status: Closed 1 newsletter popup
+PASS popup :: report-broken opens prefilled GitHub issue
+PASS popup :: issue body has host, version, what happened only
+PASS popup :: per-tab record cleared on navigation
+PASS popup :: popup says Nothing to do on a quiet page
+PASS popup :: record exists again
+PASS popup :: per-tab record cleared when tab closes
+PASS popup :: headline uses total (214)
+PASS popup :: share text exact (clipboard stubbed)
+PASS popup :: Copied! feedback
+PASS donation :: no banner/rating at 30
+PASS donation :: rating card at 60 (>=50), no banner
+PASS donation :: rating state stored shown:true
+PASS donation :: banner at 120 (milestone 100), not with rating
+PASS donation :: banner copy has the user's number
+PASS donation :: buttons render from DONATE_AMOUNTS (3/5/10 + custom)
+PASS donation :: custom hint text
+PASS donation :: monthly text link visible
+PASS donation :: asked list records milestone 100
+PASS donation :: no ask within 30 days of the last ask (milestone 500)
+PASS donation :: ask at 500 after 31 days
+PASS donation :: Don't ask again stored
+PASS donation :: never asked again after opt-out
+PASS donation :: supporter never asked + badge
+PASS donation :: options: Support section with rate + siblings
+PASS security :: page main world cannot message the extension
+PASS security :: found content-script world
+PASS security :: storage.local locked from content script
+PASS security :: storage.session locked from content script
+PASS security :: forged rejected: unknown type
+PASS security :: forged rejected: result bad outcome
+PASS security :: forged rejected: result bad ruleId
+PASS security :: forged rejected: result bad kind
+PASS security :: forged rejected: result detail not string
+PASS security :: forged rejected: popup-only message from content
+PASS security :: forged rejected: set-site-disabled from content
+PASS security :: forged rejected: supporter from non-thanks page
+PASS security :: forged rejected: array message
+PASS security :: forged messages changed nothing
+PASS security :: result from extension page rejected
+PASS security :: supporter from extension page rejected
+PASS security :: supporter flag set from the real thanks page
+PASS security :: bad session id not accepted
+PASS security :: supporter not set from another origin
+PASS rules :: cookiebot berlingske.dk (necessary-only button) rule
+PASS rules :: cookiebot berlingske.dk (necessary-only button) outcome
+PASS rules :: cookiebot berlingske.dk (necessary-only button) no console errors
+PASS rules :: cookiebot dr.dk (custom template, allow-selected with nothing ticked) rule
+PASS rules :: cookiebot dr.dk (custom template, allow-selected with nothing ticked) outcome
+PASS rules :: cookiebot dr.dk (custom template, allow-selected with nothing ticked) no console errors
+PASS rules :: didomi didomi.io (I disagree) rule
+PASS rules :: didomi didomi.io (I disagree) outcome
+PASS rules :: didomi didomi.io (I disagree) no console errors
+PASS rules :: didomi 20minutes.fr (refuse-and-subscribe, untouched) left alone (nothing counted)
+PASS rules :: didomi 20minutes.fr (refuse-and-subscribe, untouched) status pay-or-consent recorded for the popup
+PASS rules :: didomi 20minutes.fr (refuse-and-subscribe, untouched) no console errors
+PASS rules :: generic-libris.ro rule
+PASS rules :: generic-libris.ro outcome
+PASS rules :: generic-libris.ro no console errors
+PASS rules :: generic-emag.ro rule
+PASS rules :: generic-emag.ro outcome
+PASS rules :: generic-emag.ro no console errors
+PASS rules :: generic-payorconsent left alone (nothing counted)
+PASS rules :: generic-payorconsent status pay-or-consent recorded for the popup
+PASS rules :: generic-payorconsent no console errors
+PASS rules :: onetrust ikea (reject-all on first layer) rule
+PASS rules :: onetrust ikea (reject-all on first layer) outcome
+PASS rules :: onetrust ikea (reject-all on first layer) no console errors
+PASS rules :: onetrust vodafone.ro (Romanian labels) rule
+PASS rules :: onetrust vodafone.ro (Romanian labels) outcome
+PASS rules :: onetrust vodafone.ro (Romanian labels) no console errors
+PASS rules :: onetrust tv2.dk (Danish labels) rule
+PASS rules :: onetrust tv2.dk (Danish labels) outcome
+PASS rules :: onetrust tv2.dk (Danish labels) no console errors
+PASS rules :: quantcast bleepingcomputer (DISAGREE on first layer) rule
+PASS rules :: quantcast bleepingcomputer (DISAGREE on first layer) outcome
+PASS rules :: quantcast bleepingcomputer (DISAGREE on first layer) no console errors
+PASS rules :: quantcast quantcast.com (no reject on first layer) left alone (nothing counted)
+PASS rules :: quantcast quantcast.com (no reject on first layer) no console errors
+PASS rules :: quantcast express.co.uk (Reject and Pay, untouched) left alone (nothing counted)
+PASS rules :: quantcast express.co.uk (Reject and Pay, untouched) status pay-or-consent recorded for the popup
+PASS rules :: quantcast express.co.uk (Reject and Pay, untouched) no console errors
+PASS rules :: sourcepoint-bbc.com rule
+PASS rules :: sourcepoint-bbc.com outcome
+PASS rules :: sourcepoint-bbc.com no console errors
+PASS rules :: sourcepoint-guardian-payorconsent left alone (nothing counted)
+PASS rules :: sourcepoint-guardian-payorconsent status pay-or-consent recorded for the popup
+PASS rules :: sourcepoint-guardian-payorconsent no console errors
+PASS rules :: trustarc-trustarc.com rule
+PASS rules :: trustarc-trustarc.com outcome
+PASS rules :: trustarc-trustarc.com no console errors
+PASS rules :: trustarc-garmin.com rule
+PASS rules :: trustarc-garmin.com outcome
+PASS rules :: trustarc-garmin.com no console errors
+PASS rules :: usercentrics-dm.de rule
+PASS rules :: usercentrics-dm.de outcome
+PASS rules :: usercentrics-dm.de no console errors
+PASS rules :: usercentrics-fressnapf.de rule
+PASS rules :: usercentrics-fressnapf.de outcome
+PASS rules :: usercentrics-fressnapf.de no console errors
+
+144 checks, 0 failed

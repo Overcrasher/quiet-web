@@ -1,0 +1,16 @@
+# Quiet Web progress log
+- DONE: infrastructure (manifest, SW, content.js engine, newsletter.js, lib/*, popup/options/welcome, tests/run.js 490 pass), tests/e2e/cdp.py, probe.py
+- NEXT: live captures (captures/<platform>/<site>.json+.html+.png), rules/*.js + rules/README.md, harness.py (fixtures+live), check_release, package
+- CAPTURE STATUS: (none yet)
+- DONE: rules/README.md written
+- DONE: tests/e2e/harness.py + rule_fixtures.py hook written (needs first run/debug)
+- newsletter group: 19/19 pass
+- harness groups newsletter/welcome/exclusions/disable/popup/donation/security pass (rules group waits for rule_fixtures). NEXT: check_release+package, then full live pass after rules land
+- 1-4 done in code (shared isPayLike, pay-or-consent status, phrases, engine retry, carry record); run_rules_b merged. NEXT: harness rules group from captures/*/fixture.py, README, full harness, LIVE pass
+- harness rules group wired to captures/*/fixture.py: 56/56. NEXT: README, full harness, live pass -> LIVE-RESULTS.md, check_release, package
+- live.py written (cookies/newsletter/all); newsletter real sites found: minimalistbaker.com, ambitiouskitchen.com
+- newsletter.js: retries for fade-in popups + SW retry (found on real minimalistbaker.com); fixture /fade. NEXT: README, full harness, live all, LIVE-RESULTS.md, release check, package
+- README updated. waiting: live newsletter run; then full harness, live cookies, LIVE-RESULTS.md, check_release, package
+- live newsletter OK on minimalistbaker + ambitiouskitchen (popups=1), login/cart untouched. NEXT: full harness, live cookies
+- harness full: 144/144 pass. live cookies parallel run had 4 flaky sites (background-tab throttling); sequential rerun of those OK. Running full sequential live: shots/live_seq.log (then write LIVE-RESULTS.md from tests/e2e/live-raw-cookies.json + live-raw-newsletter.json), package
+- LIVE-RESULTS.md written; package built; final jsc/harness reruns left

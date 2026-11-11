@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiet Web</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <svg class="mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+      <rect width="32" height="32" rx="8" fill="#1E293B"/>
+      <path d="M8 9h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H15l-5 4v-4H8a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z" fill="#34D399"/>
+      <path d="M11 15q2.5 2 5 0t5 0" fill="none" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+    <h1>Quiet Web</h1>
+    <span id="supporter" class="badge" hidden>Supporter ❤</span>
+  </header>
+
+  <section id="banner" class="banner" hidden>
+    <button id="banner-close" class="x" type="button" aria-label="Not now">×</button>
+    <p id="banner-text"></p>
+    <div id="banner-buttons" class="donate-row"></div>
+    <p id="banner-note" class="note"></p>
+    <button id="banner-monthly" class="small-link monthly" type="button" hidden></button>
+    <div class="banner-foot">
+      <button id="banner-dismiss" class="small-link" type="button">Not now</button>
+      <button id="banner-never" class="small-link" type="button">Don't ask again</button>
+    </div>
+  </section>
+
+  <section id="rating" class="rating" hidden aria-labelledby="rating-text">
+    <p id="rating-text">Enjoying Quiet Web? A quick rating helps other people find it.</p>
+    <div class="rating-row">
+      <button id="rating-go" class="rate-btn" type="button">Rate it ★</button>
+      <button id="rating-no" class="small-link" type="button">No thanks</button>
+    </div>
+  </section>
+
+  <section class="hero" aria-labelledby="headline">
+    <div id="headline" class="big">–</div>
+    <div id="today" class="today"></div>
+    <dl class="breakdown">
+      <div><dt>Cookie banners rejected</dt><dd id="n-rejected">0</dd></div>
+      <div><dt>Hidden as a last resort</dt><dd id="n-hidden">0</dd></div>
+      <div><dt>Popups closed</dt><dd id="n-popups">0</dd></div>
+    </dl>
+  </section>
+
+  <section class="card" aria-labelledby="siteLabel">
+    <h2 id="siteLabel">This site</h2>
+    <div id="host" class="host"></div>
+    <div id="status" class="status"></div>
+    <p id="detail" class="detail" hidden></p>
+    <div id="siteControls">
+      <label class="switch"><input id="disable" type="checkbox" role="switch"><span class="track" aria-hidden="true"></span><span class="switch-text">Disable on this site</span></label>
+      <div id="reload" class="reload" hidden>
+        <span>Reload the page to apply.</span>
+        <button id="reload-btn" class="small-link" type="button">Reload now</button>
+      </div>
+      <button id="report" class="link report" type="button">Report broken site</button>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <button id="share" class="share" type="button">Share</button>
+    <button id="optionsLink" class="link" type="button">Options</button>
+  </footer>
+
+  <script src="lib/validate.js"></script>
+  <script src="lib/stats.js"></script>
+  <script src="lib/growth.js"></script>
+  <script src="lib/donation.js"></script>
+  <script src="lib/rating.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

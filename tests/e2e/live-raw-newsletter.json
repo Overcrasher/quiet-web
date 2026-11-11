@@ -1,0 +1,75 @@
+{
+ "rows": [
+  {
+   "kind": "newsletter",
+   "site": "minimalistbaker.com",
+   "url": "https://minimalistbaker.com/",
+   "status": {
+    "carry": false,
+    "cookie": null,
+    "popups": 1,
+    "url": "https://minimalistbaker.com/"
+   },
+   "overlay_after": 0,
+   "overlay_before": 0,
+   "ov_desc": [],
+   "ext_errors": []
+  },
+  {
+   "kind": "newsletter",
+   "site": "ambitiouskitchen.com",
+   "url": "https://www.ambitiouskitchen.com/",
+   "status": {
+    "carry": false,
+    "cookie": null,
+    "popups": 1,
+    "url": "https://www.ambitiouskitchen.com/"
+   },
+   "overlay_after": 0,
+   "overlay_before": 0,
+   "ov_desc": [],
+   "ext_errors": []
+  },
+  {
+   "kind": "login (must stay untouched)",
+   "site": "github.com/login",
+   "url": "https://github.com/login",
+   "status": {},
+   "overlay_after": 0,
+   "overlay_before": 0,
+   "ov_desc": [],
+   "ext_errors": []
+  },
+  {
+   "kind": "cart (must stay untouched)",
+   "site": "emag.ro/cart",
+   "url": "https://www.emag.ro/cart/products",
+   "status": {},
+   "overlay_after": 0,
+   "overlay_before": 0,
+   "ov_desc": [],
+   "ext_errors": []
+  },
+  {
+   "kind": "login (must stay untouched)",
+   "site": "minimalistbaker.com/wp-login",
+   "url": "https://minimalistbaker.com/wp-login.php",
+   "status": {},
+   "overlay_after": 0,
+   "overlay_before": 0,
+   "ov_desc": [],
+   "ext_errors": []
+  }
+ ],
+ "stats": {
+  "stats": {
+   "cookiesHidden": 0,
+   "cookiesRejected": 0,
+   "popupsClosed": 2,
+   "today": {
+    "count": 2,
+    "date": "2026-11-11"
+   }
+  }
+ }
+}

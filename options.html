@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiet Web options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <header class="top">
+      <svg class="mark" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#1E293B"/>
+        <path d="M8 9h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H15l-5 4v-4H8a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z" fill="#34D399"/>
+        <path d="M11 15q2.5 2 5 0t5 0" fill="none" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <h1>Quiet Web</h1>
+      <span id="saved" class="saved" role="status" aria-live="polite">Saved</span>
+    </header>
+
+    <section class="card">
+      <h2>Sites where Quiet Web is off</h2>
+      <p class="hint">Quiet Web does nothing on these sites. Switch a site off from the toolbar popup if it looks broken.</p>
+      <ul id="sites" class="sites"></ul>
+      <p id="sites-empty" class="hint">No sites disabled.</p>
+    </section>
+
+    <section class="card quiet">
+      <h2>Privacy</h2>
+      <p class="hint">Everything happens on your device. No accounts, no analytics, no servers, no network requests. Quiet Web never clicks accept.</p>
+    </section>
+
+    <section class="card quiet">
+      <h2>Support this project</h2>
+      <p id="thanks" class="thanks" hidden>Thank you for supporting Quiet Web ❤</p>
+      <p class="hint">Built by one developer, no ads, no tracking. If it helped, a coffee keeps it going.</p>
+      <div id="donate" class="donate-row"></div>
+      <p id="donate-note" class="hint"></p>
+      <button id="monthly" class="small-link" type="button" hidden></button>
+      <p class="hint more"><a id="rate-link" href="#">Enjoying Quiet Web? Rate it in the Chrome Web Store</a></p>
+      <p class="hint more">More from the same developer:</p>
+      <ul class="siblings">
+        <li><a id="wait24-link" href="#">Wait 24h</a> — a pause before impulse buys</li>
+        <li><a id="meter-link" href="#">Meeting Meter</a> — see what your meetings cost</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="lib/validate.js"></script>
+  <script src="lib/stats.js"></script>
+  <script src="lib/growth.js"></script>
+  <script src="lib/donation.js"></script>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
