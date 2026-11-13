@@ -42,13 +42,13 @@ PRIVACY
 • Permissions: storage, tabs (to show the current site in the popup) and access to all sites, which is needed to find banners on any page.
 
 OPTIONAL SUPPORT
-Quiet Web is free and built by one developer. If it helps, you can support it with a one-time payment (€3, €5, €10 or an amount you pick) through Stripe, or €2 a month. The ask appears in the popup only at milestones (100, 500 and 2,000 annoyances handled), at most once per milestone and 30 days apart, never right after install. Choose "Don't ask again" and it stops for good. The same links are always in Options. Payments happen on Stripe's page; the extension never sees them.
+Quiet Web is free and built by one developer. If it helps, you can support it with an optional one-time donation through Stripe. The ask appears in the popup only at milestones (100, 500 and 2,000 annoyances handled), at most once per milestone and 30 days apart, never right after install. Choose "Don't ask again" and it stops for good. The same links are always in Options. Payments happen on Stripe's page; the extension never sees them.
 
 The extension's interface is in English.
 
 Open source: https://github.com/Overcrasher/quiet-web
 ```
-Characters: 2287
+Characters: 2247
 
 ---
 
@@ -76,13 +76,13 @@ CONFIDENȚIALITATE
 • Permisiuni: storage, tabs (pentru a arăta site-ul curent în fereastra extensiei) și acces la toate site-urile, necesar pentru a găsi bannere pe orice pagină.
 
 SUSȚINERE OPȚIONALĂ
-Quiet Web este gratuită și făcută de un singur dezvoltator. Dacă ți-a fost de folos, o poți susține printr-o plată unică (3 €, 5 €, 10 € sau o sumă aleasă de tine), prin Stripe sau 2 € pe lună. Propunerea apare în fereastra extensiei doar la praguri (100, 500 și 2.000 de neplăceri rezolvate), cel mult o dată pe prag, la minimum 30 de zile distanță, niciodată imediat după instalare. Cu „Don't ask again” se oprește definitiv. Aceleași linkuri sunt mereu în Opțiuni. Plata se face pe pagina Stripe; extensia nu o vede.
+Quiet Web este gratuită și făcută de un singur dezvoltator. Dacă ți-a fost de folos, o poți susține printr-o donație unică, opțională, prin Stripe. Propunerea apare în fereastra extensiei doar la praguri (100, 500 și 2.000 de neplăceri rezolvate), cel mult o dată pe prag, la minimum 30 de zile distanță, niciodată imediat după instalare. Cu „Don't ask again” se oprește definitiv. Aceleași linkuri sunt mereu în Opțiuni. Plata se face pe pagina Stripe; extensia nu o vede.
 
 Interfața extensiei este în limba engleză.
 
 Cod sursă deschis: https://github.com/Overcrasher/quiet-web
 ```
-Characters: 2583
+Characters: 2537
 
 ### Detailed description (de, German)
 
@@ -106,13 +106,13 @@ DATENSCHUTZ
 • Berechtigungen: storage, tabs (um die aktuelle Seite im Popup zu zeigen) und Zugriff auf alle Websites, nötig, um auf jeder Seite Banner zu finden.
 
 FREIWILLIGE UNTERSTÜTZUNG
-Quiet Web ist kostenlos und von einem einzelnen Entwickler gebaut. Wenn sie dir hilft, kannst du sie mit einer einmaligen Zahlung unterstützen (3 €, 5 €, 10 € oder ein Betrag deiner Wahl) über Stripe oder 2 € im Monat. Die Bitte erscheint im Popup nur bei Meilensteinen (100, 500 und 2.000 erledigte Störungen), höchstens einmal pro Meilenstein und mit mindestens 30 Tagen Abstand, nie direkt nach der Installation. Wähle „Don't ask again“, und sie hört für immer auf. Dieselben Links findest du immer in den Optionen. Die Zahlung läuft auf der Seite von Stripe; die Erweiterung sieht sie nie.
+Quiet Web ist kostenlos und von einem einzelnen Entwickler gebaut. Wenn sie dir hilft, kannst du sie mit einer freiwilligen einmaligen Spende über Stripe unterstützen. Die Bitte erscheint im Popup nur bei Meilensteinen (100, 500 und 2.000 erledigte Störungen), höchstens einmal pro Meilenstein und mit mindestens 30 Tagen Abstand, nie direkt nach der Installation. Wähle „Don't ask again“, und sie hört für immer auf. Dieselben Links findest du immer in den Optionen. Die Zahlung läuft auf der Seite von Stripe; die Erweiterung sieht sie nie.
 
 Die Oberfläche der Erweiterung ist auf Englisch.
 
 Open Source: https://github.com/Overcrasher/quiet-web
 ```
-Characters: 2688
+Characters: 2637
 
 ### Detailed description (fr, French)
 
@@ -136,13 +136,13 @@ CONFIDENTIALITÉ
 • Autorisations : storage, tabs (pour afficher le site actuel dans la fenêtre) et accès à tous les sites, nécessaire pour repérer les bannières sur n'importe quelle page.
 
 SOUTIEN FACULTATIF
-Quiet Web est gratuite et conçue par un seul développeur. Si elle vous est utile, vous pouvez la soutenir par un paiement unique (3 €, 5 €, 10 € ou un montant de votre choix) via Stripe ou 2 € par mois. La demande n'apparaît dans la fenêtre de l'extension qu'à certains paliers (100, 500 et 2 000 nuisances traitées), au plus une fois par palier et à 30 jours d'intervalle, jamais juste après l'installation. Choisissez « Don't ask again » et elle s'arrête définitivement. Les mêmes liens sont toujours dans les Options. Le paiement se fait sur la page de Stripe ; l'extension ne le voit jamais.
+Quiet Web est gratuite et conçue par un seul développeur. Si elle vous est utile, vous pouvez la soutenir par un don unique et facultatif via Stripe. La demande n'apparaît dans la fenêtre de l'extension qu'à certains paliers (100, 500 et 2 000 nuisances traitées), au plus une fois par palier et à 30 jours d'intervalle, jamais juste après l'installation. Choisissez « Don't ask again » et elle s'arrête définitivement. Les mêmes liens sont toujours dans les Options. Le paiement se fait sur la page de Stripe ; l'extension ne le voit jamais.
 
 L'interface de l'extension est en anglais.
 
 Code source ouvert: https://github.com/Overcrasher/quiet-web
 ```
-Characters: 2783
+Characters: 2730
 
 ### Detailed description (es, Spanish)
 
@@ -166,13 +166,13 @@ PRIVACIDAD
 • Permisos: storage, tabs (para mostrar el sitio actual en la ventana) y acceso a todos los sitios, necesario para encontrar banners en cualquier página.
 
 APOYO OPCIONAL
-Quiet Web es gratuita y la ha creado un solo desarrollador. Si te resulta útil, puedes apoyarla con un pago único (3 €, 5 €, 10 € o un importe a tu elección) a través de Stripe o 2 € al mes. La petición aparece en la ventana de la extensión solo en ciertos hitos (100, 500 y 2.000 molestias resueltas), como máximo una vez por hito y con 30 días de separación, nunca justo después de instalar. Elige «Don't ask again» y se detiene para siempre. Los mismos enlaces están siempre en Opciones. El pago se hace en la página de Stripe; la extensión nunca lo ve.
+Quiet Web es gratuita y la ha creado un solo desarrollador. Si te resulta útil, puedes apoyarla con una donación única y opcional a través de Stripe. La petición aparece en la ventana de la extensión solo en ciertos hitos (100, 500 y 2.000 molestias resueltas), como máximo una vez por hito y con 30 días de separación, nunca justo después de instalar. Elige «Don't ask again» y se detiene para siempre. Los mismos enlaces están siempre en Opciones. El pago se hace en la página de Stripe; la extensión nunca lo ve.
 
 La interfaz de la extensión está en inglés.
 
 Código abierto: https://github.com/Overcrasher/quiet-web
 ```
-Characters: 2619
+Characters: 2578
 
 ---
 
@@ -257,7 +257,7 @@ Quick test (about 3 minutes). Use a profile in the EU or a fresh profile with no
 
 Why <all_urls>: cookie banners and popups appear on every kind of site, often inside iframes (so all_frames is on). All processing is local; no network requests, no remote code, no eval. For a few consent platforms a tiny MAIN-world content script per platform only calls that platform's documented reject function.
 
-Optional support: free extension. The support banner appears in the popup only at 100, 500 and 2,000 annoyances handled, at most once per milestone, 30 days apart. The same Stripe links (and a small "support monthly" link) are always in Options. Payments happen on Stripe's page.
+Optional support: free extension. The support banner appears in the popup only at 100, 500 and 2,000 annoyances handled, at most once per milestone, 30 days apart. The same Stripe link is always in Options. Payments happen on Stripe's page.
 
 Permissions: storage, tabs, host permissions <all_urls>. Source: https://github.com/Overcrasher/quiet-web
 ```
