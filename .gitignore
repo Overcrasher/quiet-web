@@ -8,3 +8,5 @@ tests/e2e/captures/**/*.html
 tests/e2e/captures/**/*.png
 tests/e2e/captures/**/*.json
 tests/e2e/captures/*.log
+tools/store_raw/
+tests/e2e/*.err

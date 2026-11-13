@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Quiet Web regression harness (headless Chrome 157, CDP, stdlib only).
 
-  python3 tests/e2e/harness.py [group ...]      groups: newsletter exclusions disable popup donation welcome security rules
+  python3 tests/e2e/harness.py [group ...]      groups: newsletter exclusions disable popup donation welcome security rules singlelink(real config, run alone)
 Fixtures are served on fake hostnames via Fetch interception (config.js is copied into a throwaway build with
 fake Stripe links so the donation UI can be exercised). Results -> shots/harness_results.txt; exit code 1 on failure.
 """
@@ -23,7 +23,7 @@ def check(group, name, ok, info=""):
     print(("PASS " if ok else "FAIL ") + group + " :: " + name + ("" if ok else "  -> " + str(info)[:300]), flush=True)
 
 
-def build_ext():
+def build_ext(real=False):
     """Copy the extension to a throwaway dir with fake donation links."""
     dst = tempfile.mkdtemp(prefix="qw-ext-", dir="/private/tmp")
     for item in os.listdir(ROOT):
@@ -41,8 +41,8 @@ def build_ext():
                 open(fp, "w").write("/* stub: rule not written yet */\n")
                 print("NOTE: stubbed missing", f)
     cfg = open(os.path.join(dst, "config.js"), encoding="utf-8").read()
-    for k in ("small", "medium", "large", "custom", "monthly"):
-        cfg = re.sub(r"(DONATE_LINKS\s*=\s*\{[^}]*?\b%s:\s*)\"\"" % k, r'\1"%s-%s"' % (FAKE, k), cfg, count=1)
+    for k in (() if real else ("small", "medium", "large", "custom", "monthly")):   # real=True keeps the shipped config.js
+        cfg = re.sub(r"(DONATE_LINKS\s*=\s*\{[^}]*?\b%s:\s*)\"[^\"]*\"" % k, r'\1"%s-%s"' % (FAKE, k), cfg, count=1)
     open(os.path.join(dst, "config.js"), "w", encoding="utf-8").write(cfg)
     return dst
 
@@ -363,6 +363,28 @@ def group_donation(env):
     opt.close()
 
 
+def group_singlelink(env):
+    """Runs on the REAL shipped config.js (only the EUR 3 link set)."""
+    g = "singlelink"
+    env.reset()
+    env.sw_eval("chrome.storage.local.set({stats:{cookiesRejected:120,cookiesHidden:0,popupsClosed:0,today:{date:'',count:0}}})"); time.sleep(0.5)
+    pop = env.ext_page("popup.html"); time.sleep(1.8)
+    check(g, "banner shown at 120", pop.evaluate("!document.getElementById('banner').hidden"))
+    btns = pop.evaluate("[...document.querySelectorAll('#banner-buttons button, #banner-buttons a')].map(b=>b.textContent)")
+    check(g, "exactly one button '€3'", btns == ["€3"], btns)
+    check(g, "no monthly link, no custom hint", pop.evaluate("document.getElementById('banner-monthly').hidden") and pop.evaluate("document.getElementById('banner-note').textContent") == "")
+    pop.screenshot(os.path.join(SHOTS, "popup-donation-banner-single-link.png"))
+    pop.evaluate("document.querySelector('#banner-buttons button').click()"); time.sleep(1.5)
+    urls = env.sw_eval("chrome.tabs.query({}).then(ts=>ts.map(t=>t.url||t.pendingUrl))")
+    check(g, "click opens the real donate.stripe.com link", "https://donate.stripe.com/aFa5kE0hp9ekcnU0Cifbq0b" in (urls or []), urls)
+    pop.close()
+    opt = env.ext_page("options.html"); time.sleep(1.0)
+    ob = opt.evaluate("[...document.querySelectorAll('#donate button')].map(b=>b.textContent)")
+    check(g, "options: only '€3', monthly hidden, no 'not configured' note", ob == ["€3"] and opt.evaluate("document.getElementById('monthly').hidden") and "not configured" not in opt.evaluate("document.getElementById('donate-note').textContent"), ob)
+    opt.screenshot(os.path.join(SHOTS, "options-single-link.png"))
+    opt.close()
+
+
 def group_welcome(env):
     g = "welcome"
     got = [t for t in env.c.targets() if t["url"].endswith("/welcome.html")]
@@ -466,11 +488,23 @@ def group_rules(env):
 
 
 GROUPS = {"newsletter": group_newsletter, "exclusions": group_exclusions, "disable": group_disable, "popup": group_popup,
-          "donation": group_donation, "welcome": group_welcome, "security": group_security, "rules": group_rules}
+          "donation": group_donation, "welcome": group_welcome, "security": group_security, "rules": group_rules, "singlelink": group_singlelink}
+
+
+def run_single():
+    ext = build_ext(real=True); env = Env(ext); time.sleep(1.5)
+    try: group_singlelink(env)
+    except Exception as e:
+        import traceback; traceback.print_exc(); check("singlelink", "group ran without exception", False, repr(e))
+    finally: env.close(); shutil.rmtree(ext, ignore_errors=True)
+    for r in RESULTS: print(("PASS " if r[2] else "FAIL ") + r[0] + " :: " + r[1] + ("" if r[2] else " -> " + r[3]))
+    sys.exit(1 if [r for r in RESULTS if not r[2]] else 0)
 
 
 def main():
     want = sys.argv[1:] or list(GROUPS)
+    if want == ["singlelink"]: return run_single()
+    want = [w for w in want if w != "singlelink"]
     ext = build_ext()
     env = Env(ext)
     time.sleep(1.5)

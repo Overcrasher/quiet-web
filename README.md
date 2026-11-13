@@ -116,7 +116,7 @@ Fixtures mirror real captures (`tests/e2e/captures/<platform>/fixture.py`) and a
 
 ```
 python3 tools/check_release.py            # config / manifest / content-script files / locales
-python3 tools/check_release.py --release  # also requires the four EUR links and the icons
+python3 tools/check_release.py --release  # also requires at least one EUR link and the icons
 python3 tools/package.py                  # dist/quiet-web-1.0.0.zip (runs the release check first)
 python3 tools/package.py --skip-release-check   # test builds only
 ```
